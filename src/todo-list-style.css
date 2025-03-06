@@ -15,7 +15,6 @@ h1{
     width: 470px;;
     margin: 100px auto;
     gap: 10px;
-    width: 100%;
 }
 
 .taskInputContainer{
@@ -126,3 +125,12 @@ h1{
     gap: 5px;
 }
 
+@media screen and (max-width: 470px) {
+    .addButton{
+        width: 120px;
+    }
+
+    .todoList{
+        width: 100%;
+    }
+}
