@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: white;
+}
+
+.todoList{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 470px;;
+    margin: 100px auto;
+    gap: 10px;
+}
+
+.taskInputContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #111;
+    border-radius: 5px;
+    color: white;
+    width: calc(100% - 45px);
+}
+
+.task span {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 5px 10px 5px 10px;
+    flex: 1;
+}
+
+
+.arrows{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.arrows img{
+    filter: invert(1);
+    transition: .2s;
+}
+
+.arrows img:hover{
+    scale: 1.1;
+}
+
+.arrows img:last-child{
+    transform: scaleY(-1);
+}
+
+.deleteButton{
+    cursor: pointer;
+    background-color: red;
+    border: 0;
+    border-radius: 5px;
+    padding: 0;
+    width: 40px;
+    transition: .2s;
+
+}
+
+.deleteButton:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.deleteButton img{
+    filter: invert(1);
+    width: 25px;
+
+}
+
+.taskContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.taskInput{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.addButton{
+    height: 40px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(0, 150, 255);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    transition: .2s;
+}
+
+.addButton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 150, 255, 0.8);
+}
+
+.taskList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
